@@ -9,16 +9,19 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 ####### CONFIGURAÇÕES PESSOAIS #######
 exec --no-startup-id sh ~/.fehbg
 exec --no-startup-id pulseaudio
+exec --no-startup-id sh ~/.arandrconfig
+exec --no-startup-id source ssh-add ~/.ssh/id_rsa_github
+exec --no-startup-id source ssh-add ~/.ssh/id_rsa_smartsense
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 3
 
 # class                 border  backgr. text    indicator
-# client.focused          #3f7b45 #285577 #ffffff #2e9ef4
+client.focused          #00ff00 #285577 #ffffff #2e9ef4
 # client.focused_inactive #333333 #5f676a #ffffff #484e50
 # client.unfocused        #333333 #222222 #888888 #292d2e
 # client.urgent           #2f343a #900000 #ffffff #900000
